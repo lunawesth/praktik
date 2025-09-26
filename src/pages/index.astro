@@ -1,90 +1,136 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-import Button from '../components/Button.astro';
-import Link from '../components/Link.astro';
 ---
-<MainLayout title="Astro, Tailwind, Alpine, Motion One og Animate CSS Starter">
-	<article class="prose">
-		<h1>Astro, Tailwind, Alpine, Motion One og en lille samling Tailwind plugins</h1>
-		<p>Dette lille site er lavet med små kodestumper, der viser de forskellige frontend frameworks, vi skal bruge i løbet af valgfaget.</p>
-		<ul> 
-			<li class="hover:animate-shake">
-				<Link href="https://astro.build/" target="_blank">Astro<Link>
-			</li>
-			<li class="hover:animate-shake">
-				<Link href="https://tailwindcss.com/" target="_blank">Tailwind<Link>
-			</li>	
-			<li class="hover:animate-shake">
-				<Link href="https://alpinejs.dev/" target="_blank">Alpine.js<Link>
-			</li>
-			<li class="hover:animate-shake">
-				<Link href="https://motion.dev/" target="_blank">Motion One<Link>
-			</li>
-		</ul>
 
-		<h2>Dertil et par Tailwind plugins og andre godbidder</h2>
-		<ul id="stagger" class="list-disc">
-			<li class="hover:animate-shake">
-				<Link href="https://github.com/tailwindlabs/tailwindcss-typography" target="_blank">TailwindCSS Typography<Link>
-			</li>
-			<li class="hover:animate-shake">
-				<Link href="https://github.com/tailwindlabs/tailwindcss-forms" target="_blank">TailwindCSS Forms<Link>
-			</li>
-			<li class="hover:animate-shake">
-				<Link href="https://www.tailwindcss-animated.com/" target="_blank">TailwindCSS Animated<Link>
-			</li>
-			<li class="hover:animate-shake">
-				<Link href="https://github.com/heidkaemper/tailwindcss-intersect" target="_blank">TailwindCSS Intersect<Link>
-			</li>
-			<li class="hover:animate-shake">
-				<Link href="https://heroicons.com/" target="_blank">Hero Icons<Link>
-			</li>
-			<li class="hover:animate-shake">
-				<Link href="https://heropatterns.com/" target="_blank">Hero Patterns:<Link> Hero patterns er brugt til baggrunden på denne side under en <Link href="https://creativecommons.org/licenses/by/4.0/" target="_blank">creative commons</Link> licens.
-			</li>
-		</ul>
+<MainLayout>
+  <div class="grid md:grid-cols-3">
+    <div
+      class="bg-cream border-2 border-green mx-5 px-5 py-10 md:col-span-2 md:ml-10 md:mr-0"
+    >
+      <h3 id="om-mig">Om mig</h3>
+      <p>
+        Jeg er 24 år og kommer fra Vordingborg. Kreativitet har altid været en
+        naturlig del af min hverdag. Jeg har nemlig gået på en Rudolf
+        Steiner-skole helt fra børnehave til 10. klasse, hvor det kunstneriske
+        og skabende hele tiden var en del af undervisningen. Senere fortsatte
+        jeg i musikklassen på gymnasiet, og i min fritid har jeg både spillet
+        forskellige instrumenter, gået på billedskole og gennemført en treårig
+        filmskole gennem ungdomsskolen.
+        <br />
+        Da jeg begyndte på Multimediedesign på Erhvervsakademiet København, fik jeg
+        mulighed for at bygge ovenpå den kreative baggrund. Her har jeg på de to
+        første semestre blandt andet lært at kode i Visual Studio i forskellige sprog,
+        bruge Figma til idéudvikling og forarbejde, samt arbejde med flere af Adobes
+        programmer – herunder Illustrator, After Effects og Premiere Pro.
+      </p>
+    </div>
 
-		<h2>Når du skal starte et nyt projekt op</h2>
+    <img
+      src="/lille-grafik.webp"
+      alt="grafisk blomst"
+      class="-mt-23 -z-10 w-600 md:hidden"
+    />
+    <img
+      src="/stor-grafik.webp"
+      alt="grafisk blomst"
+      class="-mt-23 -z-10 hidden md:block md:my-auto md:-ml-4"
+    />
+  </div>
 
-		<p>Når du skal starte et nyt projekt op, skal du bruge starter-templaten fra <Link href="https://github.com/stefangrage/astro-tailwind-starter" target="_blank">github.com/stefangrage/did-e24-starter</Link></p>
+  <div class="bg-cream border-2 border-brown mx-5 px-5 py-10 mt-40">
+    <h3 id="cv">CV</h3>
+    <h4>Uddannelse</h4>
+    <ul>
+      <li>Grundskole, Rudolf Steiner Skolen, Vordingborg — 2007 - 2018</li><br
+      />
+      <li>
+        Gymnasieuddannelse (STX), Vordingborg Gymnasium og HF — 2018 - 2021
+      </li><br />
+      <li>
+        Sygeplejerskeuddannelsen, KP, København — september 2023 - januar 2024
+      </li><br />
+      <li>Multimediesign, EK, København  — august 2024 - igangværende</li>
+    </ul>
 
-		<p>Jeg vil opfordre dig til at lave din egen starter, som du udvikler på i løbet af hele semestret. Den kan du lave ved at lave et nyt starter-template repo på basis af min starter.</p>
+    <img
+      src="/luna-img.webp"
+      alt="billede af luna"
+      class="border-2 border-orange my-15"
+    />
 
-		<p>Starter templaten indeholder en fil/mappestruktur, et par komponeneter, et layout og en side, og alle de frontend frameworks, vi arbejder med i løbet af semestret.</p>
+    <h4>Erfaring</h4>
+    <ul class="leading-8">
+      <li>Barnepige — 2016 - 2023</li><br />
+      <li>
+        Rengøring i udlejnings ejendomme, PBH NR. 22.071 ApS, Lundby — 2019 -
+        2021
+      </li><br />
+      <li>
+        Pædagogmedhjælper, Stjerneskuddet, Vordingborg — Oktober 2021- juni 2022
+      </li><br />
+      <li>
+        Vikar, Rudolf Steiner Skolen, Vordingborg — August - December 2022
+      </li><br />
+      <li>
+        Omsorgsmedhjælper, Marjatta, Præstø — September 2022 - januar 2023
+      </li><br />
+      <li>
+        Kunde konsulent for Danske Bank (projektansættelse på 3 måneder), 5R
+        People Næstved afdeling — februar - april 2023
+      </li><br />
+      <li>
+        Gæsteliste/vagt, Takin’ Care of Business  — juni 2023 - juli 2024
+      </li><br />
+      <li>
+        Pædagogmedhjælper (tilkaldevikar), Børnehuset Adilsvej, Frederiksberg  —
+        februar - juli 2024
+      </li><br />
+      <li>
+        Servicemedarbejder, Falkoner Salen, Frederiksberg — april - oktober 2024
+      </li>
+    </ul>
+  </div>
 
-		<p>
-			Start med at clone repo'et og installere alt det nødvendige ved at skrive <span class="italic font-bold">"npm i"</span> i terminalen. Kør sitet ved at skrive <span class="italic font-bold">"npm run dev"</span> i terminalen.
-		</p>
-		<p>
-			Tilpas derefter indholdet i "pages, layouts, components og assets...""
-		</p>
-		<p>
-			Og vigtigst af alt: Lav noget godt:-)
-		</p>
-		<h2>Inspiration</h2>
-		<p>
-			Du kan downloade det her lille eksempelsite fra <Link href="https://github.com/stefangrage/astro-tailwind-eksempel" target="_blank">github</Link>, og køre det lokalt. Forhåbenltligt ligner og fungerer det som <Link href="https://eloquent-genie-718325.netlify.app/">online-udgaven på Netlify</Link>.
-		</p>
-		<p>
-			Se også <Link href="http://motherfuckingwebsite.com/" target="_blank">dette lille site</a> for lidt inspiration.
-		</p>
-		<div>
-		<Button>Fang mig hvis du kan:-)</Button>
-		</div>
-	</article>
+  <img
+    src="/lille-grafik.webp"
+    alt="grafisk blomst"
+    class="-mt-23 -z-10 absolute w-600 md:hidden"
+  />
+  <img
+    src="/stor-grafik.webp"
+    alt="grafisk blomst"
+    class="-mt-23 -z-10 absolute hidden md:block"
+  />
+
+  <div class="bg-cream border-2 border-pink mx-5 px-10 py-10 mt-40">
+    <h3>Se lidt af hvad jeg har lavet her</h3>
+    <ul>
+      <a href=" https://surdejsite.netlify.app/"
+        ><li>→ Hjemmeside om surdej (mit første projekt)</li></a
+      ><br />
+      <a href="https://westh-portfolio.netlify.app/"
+        ><li>→ Eksamen 1. semester (eget portfolio)</li></a
+      ><br />
+      <a href="https://keramik-site.netlify.app/"
+        ><li>→ Hjemmeside med keramik (gruppeprojekt)</li></a
+      ><br />
+      <a href="https://pleasantt.netlify.app/ "
+        ><li>→ Dynamisk side for tøjmærke (gruppeprojekt)</li></a
+      ><br />
+      <a href="https://anotherclosett.netlify.app/"
+        ><li>→ Eksamensprojekt 2. semester (gruppeprojekt)</li></a
+      ><br />
+    </ul>
+  </div>
+
+  <img
+    src="/lille-grafik.webp"
+    alt="grafisk blomst"
+    class="mt-20 w-600 md:hidden"
+  />
+  <img
+    src="/stor-grafik.webp"
+    alt="grafisk blomst"
+    class="-mt-23 -z-10 absolute hidden md:block"
+  />
 </MainLayout>
-<script>
-	// Her kan du skrive JavaScript, der skal køre på siden
-	// Du kan også bruge Alpine.js eller Motion One til at lave interaktive elementer
-	/* Stagger animation */
-	import { animate, stagger, inView } from "motion";
-	inView( "#stagger" , () =>{
-		animate(
-		"#stagger li",
-		{ opacity: [0, 1] },
-		{ 
-			delay: stagger(1, { startDelay: 1 })
-		}
-		)
-	})
-</script>
