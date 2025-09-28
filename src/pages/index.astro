@@ -5,7 +5,7 @@ import MainLayout from "../layouts/MainLayout.astro";
 <MainLayout>
   <div class="grid md:grid-cols-3">
     <div
-      class="bg-cream border-2 border-green mx-5 px-5 py-10 md:col-span-2 md:ml-10 md:mr-0 lg:ml-30"
+      class="bg-cream border-1 border-green mx-5 px-5 py-10 md:col-span-2 md:ml-10 md:mr-0 lg:ml-30 duration-300 delay-100"
     >
       <h3 id="om-mig" class="lg:mx-10">Om mig</h3>
       <p class="lg:mx-10">
@@ -38,64 +38,70 @@ import MainLayout from "../layouts/MainLayout.astro";
   </div>
 
   <div
-    class="bg-cream border-2 border-brown mx-5 px-5 py-10 mt-40 md:mx-10 md:mb-40 lg:mx-30 grid lg:grid-cols-2 lg:grid-rows-3"
+    class="bg-cream border-1 border-brown mx-5 px-5 py-10 mt-40 md:mx-10 md:mb-40 lg:mx-30 duration-300 delay-100"
   >
-    <div class="lg:mx-10 lg:col-end-2 lg:row-start-1 lg:row-end-2">
-      <h3 id="cv">CV</h3>
-      <h4 class="lg:mt-5">Uddannelse</h4>
-      <ul>
-        <li>Grundskole, Rudolf Steiner Skolen, Vordingborg — 2007 - 2018</li><br
-        />
-        <li>
-          Gymnasieuddannelse (STX), Vordingborg Gymnasium og HF — 2018 - 2021
-        </li><br />
-        <li>
-          Sygeplejerskeuddannelsen, KP, København — september 2023 - januar 2024
-        </li><br />
-        <li>Multimediesign, EK, København  — august 2024 - igangværende</li>
-      </ul>
-    </div>
+    <h3 id="cv" class="lg:ml-10">CV</h3>
+    <div class="grid lg:grid-cols-2 lg:grid-rows-2">
+      <div
+        class="lg:mx-10 lg:row-start-1 lg:row-end-2 lg:col-start-2 lg:col-end-3"
+      >
+        <h4 class="lg:mt-5">Uddannelse</h4>
+        <ul>
+          <li>
+            Grundskole, Rudolf Steiner Skolen, Vordingborg — 2007 - 2018
+          </li><br />
+          <li>
+            Gymnasieuddannelse (STX), Vordingborg Gymnasium og HF — 2018 - 2021
+          </li><br />
+          <li>
+            Sygeplejerskeuddannelsen, KP, København — september 2023 - januar
+            2024
+          </li><br />
+          <li>Multimediesign, EK, København  — august 2024 - igangværende</li>
+        </ul>
+      </div>
 
-    <img
-      src="/luna-img.webp"
-      alt="billede af luna"
-      class="border-2 border-orange my-15 w-90 mx-auto md:w-100 md:mx-0 lg:col-start-2 lg:col-end-2 lg:row-start-2 lg:row-end-4 lg:mx-auto"
-    />
+      <img
+        src="/luna-img.webp"
+        alt="billede af luna"
+        class="border-1 border-orange my-15 w-90 mx-auto md:w-100 md:mx-0 lg:col-start-2 lg:my-0 lg:col-end-2 lg:row-start-2 lg:row-end-4 lg:mx-auto"
+      />
 
-    <div class="lg:mx-10 lg:mt-15 lg:row-start-2 lg:row-end-4">
-      <h4>Erfaring</h4>
-      <ul class="leading-8">
-        <li>Barnepige — 2016 - 2023</li><br />
-        <li>
-          Rengøring i udlejnings ejendomme, PBH NR. 22.071 ApS, Lundby — 2019 -
-          2021
-        </li><br />
-        <li>
-          Pædagogmedhjælper, Stjerneskuddet, Vordingborg — Oktober 2021- juni
-          2022
-        </li><br />
-        <li>
-          Vikar, Rudolf Steiner Skolen, Vordingborg — August - December 2022
-        </li><br />
-        <li>
-          Omsorgsmedhjælper, Marjatta, Præstø — September 2022 - januar 2023
-        </li><br />
-        <li>
-          Kunde konsulent for Danske Bank (projektansættelse på 3 måneder), 5R
-          People Næstved afdeling — februar - april 2023
-        </li><br />
-        <li>
-          Gæsteliste/vagt, Takin’ Care of Business  — juni 2023 - juli 2024
-        </li><br />
-        <li>
-          Pædagogmedhjælper (tilkaldevikar), Børnehuset Adilsvej, Frederiksberg 
-          — februar - juli 2024
-        </li><br />
-        <li>
-          Servicemedarbejder, Falkoner Salen, Frederiksberg — april - oktober
-          2024
-        </li>
-      </ul>
+      <div class="lg:mx-10 lg:row-start-1 lg:row-end-3">
+        <h4>Erfaring</h4>
+        <ul class="leading-8">
+          <li>Barnepige — 2016 - 2023</li><br />
+          <li>
+            Rengøring i udlejnings ejendomme, PBH NR. 22.071 ApS, Lundby — 2019
+            - 2021
+          </li><br />
+          <li>
+            Pædagogmedhjælper, Stjerneskuddet, Vordingborg — Oktober 2021- juni
+            2022
+          </li><br />
+          <li>
+            Vikar, Rudolf Steiner Skolen, Vordingborg — August - December 2022
+          </li><br />
+          <li>
+            Omsorgsmedhjælper, Marjatta, Præstø — September 2022 - januar 2023
+          </li><br />
+          <li>
+            Kunde konsulent for Danske Bank (projektansættelse på 3 måneder), 5R
+            People Næstved afdeling — februar - april 2023
+          </li><br />
+          <li>
+            Gæsteliste/vagt, Takin’ Care of Business  — juni 2023 - juli 2024
+          </li><br />
+          <li>
+            Pædagogmedhjælper (tilkaldevikar), Børnehuset Adilsvej,
+            Frederiksberg  — februar - juli 2024
+          </li><br />
+          <li>
+            Servicemedarbejder, Falkoner Salen, Frederiksberg — april - oktober
+            2024
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 
@@ -112,9 +118,9 @@ import MainLayout from "../layouts/MainLayout.astro";
     />
 
     <div
-      class="bg-cream border-2 border-pink mx-5 px-10 py-10 mt-40 md:col-span-2 md:mt-0 md:ml-0 md:mr-10 lg:mr-30"
+      class="bg-cream border-1 border-pink mx-5 px-10 py-10 mt-40 md:col-span-2 md:mt-0 md:ml-0 md:mr-10 lg:mr-30"
     >
-      <h3>Se lidt af hvad jeg har lavet her</h3>
+      <h3 id="projekter">Se lidt af hvad jeg har lavet her</h3>
       <ul>
         <a href=" https://surdejsite.netlify.app/"
           ><li class="hover:text-orange duration-300 delay-100">
