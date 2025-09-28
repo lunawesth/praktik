@@ -5,7 +5,7 @@ import MainLayout from "../layouts/MainLayout.astro";
 <MainLayout>
   <div class="grid md:grid-cols-3">
     <div
-      class="bg-cream border-2 border-green mx-5 px-5 py-10 md:col-span-2 md:ml-10 lg:ml-30"
+      class="bg-cream border-2 border-green mx-5 px-5 py-10 md:col-span-2 md:ml-10 md:mr-0 lg:ml-30"
     >
       <h3 id="om-mig" class="lg:mx-10">Om mig</h3>
       <p class="lg:mx-10">
@@ -28,12 +28,12 @@ import MainLayout from "../layouts/MainLayout.astro";
     <img
       src="/lille-grafik.webp"
       alt="grafisk blomst"
-      class="-mt-23 -z-10 w-600 md:my-auto md:-ml-4 md:right-0"
+      class="-mt-23 -z-10 w-600 md:my-auto md:right-0"
     />
   </div>
 
   <div
-    class="bg-cream border-2 border-brown mx-5 px-5 py-10 mt-40 md:mx-10 lg:mx-30 grid lg:grid-cols-2 lg:grid-rows-3"
+    class="bg-cream border-2 border-brown mx-5 px-5 py-10 mt-40 md:mx-10 md:mb-40 lg:mx-30 grid lg:grid-cols-2 lg:grid-rows-3"
   >
     <div class="lg:mx-10 lg:col-end-2 lg:row-start-1 lg:row-end-2">
       <h3 id="cv">CV</h3>
@@ -102,24 +102,34 @@ import MainLayout from "../layouts/MainLayout.astro";
     />
 
     <div
-      class="bg-cream border-2 border-pink mx-5 px-10 py-10 mt-40 md:col-span-2 md:mr-10 lg:mr-30"
+      class="bg-cream border-2 border-pink mx-5 px-10 py-10 mt-40 md:col-span-2 md:mt-0 md:ml-0 md:mr-10 lg:mr-30"
     >
       <h3>Se lidt af hvad jeg har lavet her</h3>
       <ul>
         <a href=" https://surdejsite.netlify.app/"
-          ><li>→ Hjemmeside om surdej (mit første projekt)</li></a
+          ><li class="hover:text-orange duration-300 delay-100">
+            → Hjemmeside om surdej (mit første projekt)
+          </li></a
         ><br />
         <a href="https://westh-portfolio.netlify.app/"
-          ><li>→ Eksamen 1. semester (eget portfolio)</li></a
+          ><li class="hover:text-green duration-300 delay-100">
+            → Eksamen 1. semester (eget portfolio)
+          </li></a
         ><br />
         <a href="https://keramik-site.netlify.app/"
-          ><li>→ Hjemmeside med keramik (gruppeprojekt)</li></a
+          ><li class="hover:text-pink duration-300 delay-100">
+            → Hjemmeside med keramik (gruppeprojekt)
+          </li></a
         ><br />
         <a href="https://pleasantt.netlify.app/ "
-          ><li>→ Dynamisk side for tøjmærke (gruppeprojekt)</li></a
+          ><li class="hover:text-orange duration-300 delay-100">
+            → Dynamisk side for tøjmærke (gruppeprojekt)
+          </li></a
         ><br />
         <a href="https://anotherclosett.netlify.app/"
-          ><li>→ Eksamensprojekt 2. semester (gruppeprojekt)</li></a
+          ><li class="hover:text-green duration-300 delay-100">
+            → Eksamensprojekt 2. semester (gruppeprojekt)
+          </li></a
         ><br />
       </ul>
     </div>
@@ -133,6 +143,6 @@ import MainLayout from "../layouts/MainLayout.astro";
   <img
     src="/stor-grafik.webp"
     alt="grafisk blomst"
-    class="hidden md:block md:mt-30"
+    class="hidden md:block md:mt-40"
   />
 </MainLayout>
