@@ -28,7 +28,12 @@ import MainLayout from "../layouts/MainLayout.astro";
     <img
       src="/lille-grafik.webp"
       alt="grafisk blomst"
-      class="-mt-23 -z-10 w-600 md:my-auto md:right-0"
+      class="-mt-23 -z-10 w-600 lg:my-auto lg:right-0 md:hidden lg:block"
+    />
+    <img
+      src="/lille-lille-grafik.webp"
+      alt="grafisk blomst"
+      class="hidden md:block md:my-auto lg:hidden"
     />
   </div>
 
@@ -98,7 +103,12 @@ import MainLayout from "../layouts/MainLayout.astro";
     <img
       src="/lille-grafik.webp"
       alt="grafisk blomst"
-      class="-mt-23 -z-10 w-600 md:order-first md:my-auto"
+      class="-mt-23 -z-10 w-600 md:hidden lg:block lg:order-first lg:my-auto"
+    />
+    <img
+      src="/lille-lille-grafik.webp"
+      alt="grafisk blomst"
+      class="hidden md:block md:my-auto lg:hidden"
     />
 
     <div
@@ -141,8 +151,13 @@ import MainLayout from "../layouts/MainLayout.astro";
     class="mt-20 w-600 md:hidden"
   />
   <img
+    src="/lille-mellem-grafik.webp"
+    alt="grafisk blomst"
+    class="hidden md:block lg:hidden md:mt-40"
+  />
+  <img
     src="/stor-grafik.webp"
     alt="grafisk blomst"
-    class="hidden md:block md:mt-40"
+    class="hidden lg:block md:mt-40"
   />
 </MainLayout>
